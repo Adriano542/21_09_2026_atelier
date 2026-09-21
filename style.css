@@ -1,1 +1,157 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    background-color: rgb(241, 250, 238);
+    color: rgb(27, 67, 50);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Nagłówek i Sekcja Menu (Flex) */
+header {
+    background-color: rgb(27, 67, 50);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+nav a {
+    color: #95d5b2;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Główny kontener treści */
+main {
+    width: 960px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Słownik Usług (dl) */
+dl {
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+/* Sekcja Wyrobów (Grid) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.card {
+    border: 1px solid rgb(27, 67, 50);
+    padding: 12px;
+    background-color: transparent;
+}
+
+.card img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Tabela Cennik */
+table {
+    width: 480px;
+    border-collapse: collapse;
+    border: 1px solid rgb(27, 67, 50);
+}
+
+th, td {
+    border: 1px solid rgb(27, 67, 50);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(27, 67, 50);
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Formularz */
+form {
+    width: 480px;
+    border: 2px dashed #2d6a4f;
+    border-radius: 8px;
+    padding: 16px 24px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    width: 60px;
+}
+
+.form-group input, 
+.form-group select {
+    font-family: inherit;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 8px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Stopka */
+footer {
+    background-color: rgb(27, 67, 50);
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}

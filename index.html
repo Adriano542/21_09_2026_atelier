@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jan Kowalski 3i">
+    <title>Glina — atelier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>Atelier Glina</h1>
+        <nav>
+            <a href="#wyroby">Wyroby</a>
+            <a href="#cennik">Cennik</a>
+            <a href="#zapis">Zapis</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Usługi</h2>
+            <dl>
+                <dt>Kubek</dt>
+                <dd>od 45 zł</dd>
+                <dt>Miska</dt>
+                <dd>od 70 zł</dd>
+                <dt>Wazon</dt>
+                <dd>od 90 zł</dd>
+            </dl>
+        </section>
+
+        <section id="wyroby">
+            <h2>Wyroby</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <img src="https://picsum.photos/400/260?random=1" alt="Kubek kamionkowy">
+                    <h3>Kubek kamionkowy</h3>
+                    <p>Kubek toczony ręcznie, szkliwiony.</p>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/400/260?random=2" alt="Miska na owoce">
+                    <h3>Miska na owoce</h3>
+                    <p>Szeroka miska stołowa.</p>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/400/260?random=3" alt="Wazon wysoki">
+                    <h3>Wazon wysoki</h3>
+                    <p>Wazon na kwiaty cięte.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cennik">
+            <h2>Cennik</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wyrób</th>
+                        <th>Wypał</th>
+                        <th>Cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kubek</td>
+                        <td>2 dni</td>
+                        <td class="bold">45 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Miska</td>
+                        <td>3 dni</td>
+                        <td class="bold">70 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Wazon</td>
+                        <td>4 dni</td>
+                        <td class="bold">90 zł</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="zapis">
+            <h2>Zapis na wypał</h2>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="imie">Imię</label>
+                    <input type="text" id="imie" name="imie">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="wyrob">Wyrób</label>
+                    <select id="wyrob" name="wyrob">
+                        <option value="Kubek">Kubek</option>
+                        <option value="Miska" selected>Miska</option>
+                        <option value="Wazon">Wazon</option>
+                    </select>
+                </div>
+                <button type="submit">Zapisz się na wypał</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jan Kowalski 3i</p>
+    </footer>
+
+</body>
+</html>
