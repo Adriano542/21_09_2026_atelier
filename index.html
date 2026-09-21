@@ -84,7 +84,7 @@
 
         <section id="zapis">
             <h2>Zapis na wypał</h2>
-            <form action="" method="post">
+            <form id="formularz-zapisow" onsubmit="zapiszNaWypal(event)">
                 <div class="form-group">
                     <label for="imie">Imię</label>
                     <input type="text" id="imie" name="imie">
@@ -103,6 +103,7 @@
                 </div>
                 <button type="submit">Zapisz się na wypał</button>
             </form>
+            <p id="wynik"></p>
         </section>
     </main>
 
