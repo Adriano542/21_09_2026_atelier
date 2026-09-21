@@ -110,5 +110,30 @@
         <p>Adrian Cebula 5i</p>
     </footer>
 
+    <script>
+        function zapiszNaWypal() {
+            const imie = document.getElementById('imie').value;
+            const email = document.getElementById('email').value;
+            const wyrob = document.getElementById('wyrob').value;
+            const wynik = document.getElementById('wynik');
+
+            let dni = "";
+            let cena = "";
+
+            if (wyrob === "Kubek") {
+                dni = "2 dni";
+                cena = "45zł";
+            } else if (wyrob === "Miska") {
+                dni = "3 dni";
+                cena = "70zł";
+            } else if (wyrob === "Wazon") {
+                dni = "4 dni";
+                cena = "90zł";
+            }
+
+            wynik.textContent = `${imie} (${email}) zapisał/a się na wypał ${wyrob}, trwający ${dni} w cenie ${cena}`;
+        }
+    </script>
+
 </body>
 </html>
