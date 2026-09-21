@@ -84,7 +84,7 @@
 
         <section id="zapis">
             <h2>Zapis na wypał</h2>
-            <form id="formularz-zapisow" onsubmit="zapiszNaWypal(event)">
+            <form id="formularz-zapisow">
                 <div class="form-group">
                     <label for="imie">Imię</label>
                     <input type="text" id="imie" name="imie">
@@ -101,7 +101,7 @@
                         <option value="Wazon">Wazon</option>
                     </select>
                 </div>
-                <button type="submit">Zapisz się na wypał</button>
+                <button type="button" id="btn-zapis">Zapisz się na wypał</button>
             </form>
             <p id="wynik"></p>
         </section>
@@ -112,7 +112,7 @@
     </footer>
 
     <script>
-        function zapiszNaWypal() {
+        document.getElementById('btn-zapis').addEventListener('click', function() {
             const imie = document.getElementById('imie').value;
             const email = document.getElementById('email').value;
             const wyrob = document.getElementById('wyrob').value;
@@ -133,7 +133,7 @@
             }
 
             wynik.textContent = `${imie} (${email}) zapisał/a się na wypał ${wyrob}, trwający ${dni} w cenie ${cena}`;
-        }
+        });
     </script>
 
 </body>
